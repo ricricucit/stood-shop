@@ -1,0 +1,27 @@
+{
+  "name": "stood-static-shop",
+  "version": "1.0.0",
+  "description": "Stood's shop with datoCMS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ricricucit/stood-shop.git"
+  },
+  "keywords": [
+    "stood",
+    "shop",
+    "static"
+  ],
+  "author": "Enrico Icardi <info@stood.it>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ricricucit/stood-shop/issues"
+  },
+  "homepage": "https://github.com/ricricucit/stood-shop#readme",
+  "devDependencies": {
+    "datocms-client": "^0.3.25"
+  }
+}
