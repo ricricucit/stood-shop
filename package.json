@@ -2,7 +2,6 @@
   "name": "stood-static-shop",
   "version": "1.0.0",
   "description": "Stood's shop with datoCMS",
-  "main": "index.js",
   "scripts": {
     "dev": "NODE_ENV='dev' env UV_THREADPOOL_SIZE=100 webpack-dev-server -d --host 0.0.0.0 --open",
     "prod": "NODE_ENV='prod' env UV_THREADPOOL_SIZE=100  webpack -p --optimize-minimize;"
