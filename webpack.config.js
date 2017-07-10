@@ -72,27 +72,27 @@ const prod_plugins = [
 				windows: false
 			}
 		}),
-        new HtmlWebpackPlugin({
-            template: 'index.html',
-            filename: '../index.html',
-            hash: true,
-            inject: true
-        }),
-        new webpack.optimize.CommonsChunkPlugin({ name: 'vendor', filename: 'scripts/vendor.min.js?h=[hash]' })
+    new HtmlWebpackPlugin({
+        template: 'src/index.html',
+        filename: '../index.html',
+        hash: true,
+        inject: true
+    }),
+    new webpack.optimize.CommonsChunkPlugin({ name: 'vendor', filename: 'scripts/vendor.min.js?h=[hash]' })
 	];
 
 
 const dev_plugins = [
-        new HtmlWebpackPlugin({
-            alwaysWriteToDisk: true, //this uses HtmlWebpackHarddiskPlugin
-            template: 'src/index.html',
-            filename: 'index.html',
-            hash: true,
-            inject: true
-        }),
-        new HtmlWebpackHarddiskPlugin({
-            outputPath: path.resolve(__dirname)
-        }),
+    new HtmlWebpackPlugin({
+        alwaysWriteToDisk: true, //this uses HtmlWebpackHarddiskPlugin
+        template: 'src/index.html',
+        filename: 'index.html',
+        hash: true,
+        inject: true
+    }),
+    new HtmlWebpackHarddiskPlugin({
+        outputPath: path.resolve(__dirname)
+    }),
 		//about HTML compression and CSS/JS scripts injection
 		// [TODO?]
 		//about SASS compilation
