@@ -3,7 +3,7 @@
 module.exports = (dato, root, i18n) => {
   i18n.locale = 'en';
   // inside a "src/laptopStands" directory...
-  root.directory("data/laptop_stands", (laptopStandsDir) => {
+  root.directory("dist/data/laptop_stands", (laptopStandsDir) => {
 
     //foreach locale
     i18n.availableLocales.forEach((locale) => {
