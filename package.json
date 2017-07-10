@@ -21,7 +21,7 @@
     "url": "https://github.com/ricricucit/stood-shop/issues"
   },
   "homepage": "https://github.com/ricricucit/stood-shop#readme",
-  "devDependencies": {
+  "optionalDependencies": {
     "@welance/welance-bs": "^0.6.1",
     "babel-core": "^6.25.0",
     "babel-loader": "^7.1.1",
@@ -43,5 +43,6 @@
     "webpack": "^3.1.0",
     "webpack-dev-server": "^2.5.1"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {}
 }
