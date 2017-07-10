@@ -1,0 +1,68 @@
+// body{
+//   font-size: $font-size-base;
+//   line-height: $line-height-base;
+//   font-family: $font-family-base;
+//   font-weight: $font-weight-normal;
+//   text-rendering: optimizeLegibility;
+//   text-rendering: geometricPrecision;
+// }
+
+h1{
+    @include ms-respond(font-size, 7);
+    line-height: $line-height-h1;
+    font-weight: $font-weight-bold;
+    letter-spacing: -0.0225em;
+    font-family: $font-family-headings;
+}
+
+h2{
+    @include ms-respond(font-size, 6);
+    font-weight: $font-weight-bold;
+    line-height: $line-height-base;
+    font-family: $font-family-headings;
+}
+
+h3{
+    @include ms-respond(font-size, 4);
+    font-weight: $font-weight-bold;
+    line-height: $line-height-base;
+    font-family: $font-family-headings;
+}
+
+h4{
+    @include ms-respond(font-size, 2);
+    font-weight: $font-weight-normal;
+    line-height: $line-height-base;
+    font-family: $font-family-headings;
+}
+
+h5{
+    @include ms-respond(font-size, 1);
+    font-weight: $font-weight-normal;
+    line-height: $line-height-base;
+    font-family: $font-family-headings;
+}
+
+h6{
+    @include ms-respond(font-size, 0);
+    font-weight: $font-weight-normal;
+    line-height: $line-height-base;
+    font-family: $font-family-headings;
+}
+
+p{
+    @include ms-respond(font-size, 0);
+    line-height: $line-height-big;
+    letter-spacing: .0125em;
+}
+strong{
+  font-family: $font-family-headings;
+}
+
+// pre{
+//   @include m(0);
+//   @include mt(1);
+//   @include mb(1);
+//   @include p(2);
+//   background-color: $gray-lightest;
+// }

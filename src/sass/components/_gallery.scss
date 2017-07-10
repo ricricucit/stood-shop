@@ -1,0 +1,23 @@
+.gallery{
+  &--logos{
+    @include mq($until: md) {
+      .col{
+        width: 33.33%;
+      }
+    }
+    @include mq($from: xs, $until: sm) {
+      .col{
+        width: 50%;
+      }
+    }
+    div[class^="img--"]{
+      img, video{
+        object-fit: contain;
+        padding: 30% 0;
+      }
+    }
+    .caption{
+      display: none;
+    }
+  }
+}

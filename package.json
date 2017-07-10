@@ -4,7 +4,8 @@
   "description": "Stood's shop with datoCMS",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "NODE_ENV='dev' env UV_THREADPOOL_SIZE=100 webpack-dev-server -d --host 0.0.0.0 --open",
+    "prod": "NODE_ENV='prod' env UV_THREADPOOL_SIZE=100  webpack -p --optimize-minimize;"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,26 @@
   },
   "homepage": "https://github.com/ricricucit/stood-shop#readme",
   "devDependencies": {
-    "datocms-client": "^0.3.25"
-  }
+    "@welance/welance-bs": "^0.6.1",
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-env": "^1.6.0",
+    "copy-webpack-plugin": "^4.0.1",
+    "css-loader": "^0.28.4",
+    "datocms-client": "^0.3.25",
+    "extract-text-webpack-plugin": "^2.1.2",
+    "favicons-webpack-plugin": "0.0.7",
+    "html-webpack-harddisk-plugin": "^0.1.0",
+    "html-webpack-plugin": "^2.29.0",
+    "imagemin-webpack-plugin": "^1.5.0-beta.0",
+    "jquery": "^3.2.1",
+    "modularscale-sass": "^2.1.1",
+    "node-sass": "^4.5.3",
+    "object-fit-images": "^3.2.3",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.1.0",
+    "webpack-dev-server": "^2.5.1"
+  },
+  "dependencies": {}
 }
