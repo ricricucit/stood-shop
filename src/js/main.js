@@ -11,4 +11,12 @@ console.info( "\n\n\nCreated by %chttp://welance.com/ %ca Freelancers Collective
 
 $(function() {
     //console.info("Good News: Main.js file has been imported");
+    $.ajax({
+        dataType: "json",
+        url: '/dist/data/laptop_stands/en/laptop-stand-made-of-wood.json',
+        data: '',
+        success: function(data){
+            console.log('DATA', data);
+        }
+    });
 });

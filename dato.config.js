@@ -9,29 +9,27 @@ module.exports = (dato, root, i18n) => {
     i18n.availableLocales.forEach((locale) => {
       // switch to the nth locale
       i18n.withLocale(locale, () => {
-			dato.laptopStands.forEach((laptopStand) => {
+        //
+        dato.laptopStands.forEach((laptopStand) => {
+          // get sizes of laptop stands
+          let sizes = [];
+          laptopStand.size.forEach((size) =>{
+              sizes.push({ name : size.name, slug : size.slug });
+          });
+          // ...and create a markdown file for each article!
+          laptopStandsDir.createPost(
+            `${locale}/${laptopStand.slug}.json`, "json", {
+              frontmatter: {
+                title: laptopStand.title,
+                              slug: laptopStand.slug,
+                description:laptopStand.description,
+                              sizes: sizes
+              },
+            }
+          );// laptopStandsDir.createPost
 
-                let sizes = [];
-                laptopStand.size.forEach((size) =>{
-                    sizes.push({ name : size.name, slug : size.slug });
-                });
-
-				// ...and create a markdown file for each article!
-				laptopStandsDir.createPost(
-					`${locale}/${laptopStand.slug}.json`, "json", {
-						frontmatter: {
-							title: laptopStand.title,
-                            slug: laptopStand.slug,
-							description:laptopStand.description,
-                            sizes: sizes
-						},
-					}
-				);
-			});
-		});
-    });
-
-
+        }); // laptopStands.forEach
+		  }); // i18n.withLocale
+    }); // i18n.availableLocales
   });
-
 };
